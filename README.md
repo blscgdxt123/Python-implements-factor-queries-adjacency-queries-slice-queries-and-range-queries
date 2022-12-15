@@ -7,6 +7,7 @@ Download the data from https://gadm.org/
 Requirements: Data with county-level boroughs worldwide are used
 
 1. Using the program, based on the postgis database is now the following functions and tests
+
 Requirements:
 
 (1) To achieve a function, input any country, the number of county-level administrative regions of the country (that is, the number of elements contained in the data of a country), and the statistics of the country in the county level administrative areas of the largest three, print out the name and area value;
@@ -16,6 +17,7 @@ Requirements:
 (3) Realize a data processing function, the function accepts three parameters: country name, pixel resolution, output directory. Input any country, render the data of this country at the specified pixel resolution (pixel resolution is the size of the actual geographic range represented by a pixel, wide and high resolution), and then shred the rendered grid of the specified country according to the 256x256 pixel size index grid. Image data cut into squares and written to the output directory (this process is also called slicing). You need to take into account the maximum outer rectangular boundaries of the corresponding countries, and then generate a picture to scale, with each small administrative area assigned a random color, and all county boundaries separated by black lines. The output section image data is named in an index way. For example, the section file in the upper left corner is named 1-1, the one below is 2-1, the one on the right is 1-2, and so on. If the output data format is jpg or other raster data without coordinate information, corresponding coordinate registration files will be generated according to the data coordinate parameters of each slice file. For example, jpg files will output corresponding jgw files, and finally open all slice data in qgis for comprehensive display. ;
 
 2. Implement the following functions and test based on mongodb database with the program
+
 Requirements:
 
 (1) Implement a function, given a latitude and longitude coordinates and coding length, then generate a geohash code;
